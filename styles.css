@@ -21,6 +21,7 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Header */
 header {
     position: fixed;
     display: flex;
@@ -33,7 +34,8 @@ header {
 }
 
 header .logo img {
-    height: 40px;
+    height: 60px; /* Altura ajustada para o logo */
+    width: auto; /* Mantém a proporção */
 }
 
 header ul {
@@ -61,6 +63,7 @@ header button {
     cursor: pointer;
 }
 
+/* Hero Section */
 .hero {
     display: flex;
     align-items: center;
@@ -94,35 +97,173 @@ header button {
 }
 
 .hero img {
-    width: 40%;
+    width: 40%; /* Largura ajustada para a imagem do hero */
+    max-width: 500px; /* Tamanho máximo */
+    height: auto; /* Mantém a proporção */
 }
 
-.about, .features, .pitch, .team {
-    padding: 5% 8%;
-    text-align: center;
-}
-
+/* About Section */
 .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 8%;
     background-color: var(--accent2);
 }
 
+.about img {
+    width: 40%; /* Largura ajustada para a imagem */
+    max-width: 400px; /* Tamanho máximo */
+    height: auto; /* Mantém a proporção */
+}
+
+.about .info {
+    max-width: 50%;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    color: var(--text);
+}
+
+.about p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    color: var(--text);
+}
+
+/* Features Section */
 .features {
+    padding: 5% 8%;
     background-color: var(--text-alt);
+    text-align: center;
 }
 
+.features h2 {
+    font-size: 2.5rem;
+    color: var(--text);
+    margin-bottom: 2rem;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%; /* Ocupa 100% do contêiner */
+    max-width: 300px; /* Tamanho máximo */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--text-alt);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+/* Pitch Section */
 .pitch {
+    padding: 5% 8%;
     background-color: var(--secondary);
+    text-align: center;
 }
 
+.pitch h2 {
+    font-size: 2.5rem;
+    color: var(--text-alt);
+    margin-bottom: 2rem;
+}
+
+.pitch iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+/* Team Section */
 .team {
+    padding: 5% 8%;
     background-color: var(--accent);
+    text-align: center;
 }
 
+.team h2 {
+    font-size: 2.5rem;
+    color: var(--text);
+    margin-bottom: 2rem;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.team-grid .member {
+    text-align: center;
+}
+
+.team-grid .member img {
+    width: 150px; /* Tamanho fixo para as fotos */
+    height: 150px; /* Mantém a proporção */
+    border-radius: 50%; /* Fotos redondas */
+    object-fit: cover; /* Cobre o espaço sem distorcer */
+}
+
+.team-grid .member p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+/* Footer */
 footer {
     background-color: var(--tertiary);
     color: var(--text-alt);
     text-align: center;
     padding: 2rem;
+}
+
+footer h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
 }
 
 footer .logos {
@@ -133,7 +274,8 @@ footer .logos {
 }
 
 footer .logos img {
-    height: 50px;
+    height: 60px; /* Altura ajustada para os logos */
+    width: auto; /* Mantém a proporção */
 }
 
 /* Modal de Contato */
@@ -160,6 +302,7 @@ footer .logos img {
 
 .contact-modal h2 {
     margin-bottom: 1rem;
+    color: var(--text);
 }
 
 .contact-modal form {
@@ -168,7 +311,8 @@ footer .logos img {
     gap: 1rem;
 }
 
-.contact-modal form input, .contact-modal form textarea {
+.contact-modal form input,
+.contact-modal form textarea {
     padding: 0.5rem;
     border: 1px solid var(--primary);
     border-radius: 5px;
