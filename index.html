@@ -3,76 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joga Junto - Divulgação</title>
+    <title>Joga Junto</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Barra de Navegação -->
     <header>
-        <img src="logo.png" alt="Logo do Joga Junto">
-        <h1>"Transformando a forma como eventos esportivos são organizados!"</h1>
+        <div class="logo">Joga Junto</div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#funcionalidades">Funcionalidades</a></li>
+                <li><a href="#video">Vídeo</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <section id="descricao">
-        <h2>O que é o Joga Junto?</h2>
-        <p>Aplicativo Web e mobile para gerenciamento de jogos esportivos.</p>
-    </section>
-    
-    <section id="objetivo">
-        <h2>Nosso Objetivo</h2>
+
+    <!-- Seção de Introdução -->
+    <section id="sobre" class="hero">
+        <h1>Transforme sua experiência esportiva!</h1>
         <p>O Joga Junto nasceu para transformar a forma como eventos esportivos são organizados!</p>
     </section>
-    
-    <section id="diferencial">
-        <h2>Nosso Diferencial</h2>
-        <p>Com uma plataforma moderna e intuitiva, conectamos jogadores, organizadores e provedores de espaços esportivos, oferecendo uma experiência simples, ágil e integrada.</p>
-    </section>
-    
+
+    <!-- Seção de Funcionalidades -->
     <section id="funcionalidades">
         <h2>Principais Funcionalidades</h2>
         <div class="carousel">
             <div class="slide">
-                <img src="funcionalidade1.jpg" alt="Criar eventos esportivos">
-                <p>Seja para criar e gerenciar partidas, reservar quadras ou montar grupos, o Joga Junto facilita cada etapa do processo, garantindo transparência, praticidade e mais diversão para todos os envolvidos!</p>
+                <img src="img1.jpg" alt="Imagem 1">
+                <p>Criação e gerenciamento de partidas</p>
+            </div>
+            <div class="slide">
+                <img src="img2.jpg" alt="Imagem 2">
+                <p>Reserva de quadras e espaços esportivos</p>
+            </div>
+            <div class="slide">
+                <img src="img3.jpg" alt="Imagem 3">
+                <p>Montagem de grupos esportivos</p>
             </div>
         </div>
     </section>
-    
-    <section id="pitch">
-        <h2>Vídeo de Pitch</h2>
-        <iframe width="560" height="315" src="[URL_DO_VIDEO]" frameborder="0" allowfullscreen></iframe>
+
+    <!-- Seção de Vídeo -->
+    <section id="video">
+        <h2>Assista ao nosso Pitch</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO" frameborder="0" allowfullscreen></iframe>
+        </div>
     </section>
-    
+
+    <!-- Seção de Equipe -->
     <section id="equipe">
         <h2>Nossa Equipe</h2>
-        <h3>Desenvolvedores</h3>
         <div class="team">
-            <img src="[FOTO_ALUNO1]" alt="Nome do Aluno 1">
-            <p>Nome do Aluno 1</p>
-            <img src="[FOTO_ALUNO2]" alt="Nome do Aluno 2">
-            <p>Nome do Aluno 2</p>
-        </div>
-        
-        <h3>Consultoria Técnica</h3>
-        <div class="team">
-            <img src="[FOTO_PROFESSOR1]" alt="Nome do Professor 1">
-            <p>Nome do Professor 1</p>
-        </div>
-        
-        <h3>Especialistas do Domínio</h3>
-        <div class="team">
-            <img src="[FOTO_ESPECIALISTA1]" alt="Nome do Especialista 1">
-            <p>Nome do Especialista 1</p>
+            <div class="member">
+                <img src="dev1.jpg" alt="Dev 1">
+                <p>Nome do Desenvolvedor</p>
+            </div>
+            <div class="member">
+                <img src="prof1.jpg" alt="Professor">
+                <p>Consultoria Técnica</p>
+            </div>
+            <div class="member">
+                <img src="po1.jpg" alt="Especialista">
+                <p>Especialista do Domínio</p>
+            </div>
         </div>
     </section>
-    
-    <section id="contato">
+
+    <!-- Seção de Contato -->
+    <footer id="contato">
         <h2>Entre em Contato</h2>
         <p>Email: contato@dcomp.ufs.br</p>
-    </section>
-    
-    <footer>
-        <img src="logo_ufs.png" alt="Logo UFS">
-        <img src="logo_dcomp.png" alt="Logo DCOMP">
+        <img src="ufs-logo.png" alt="Logo UFS" class="logo-ufs">
     </footer>
+
 </body>
 </html>
