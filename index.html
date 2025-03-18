@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Metadados mantidos iguais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joga Junto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Barra de Navegação -->
     <header>
         <div class="logo">Joga Junto</div>
@@ -18,14 +24,64 @@
         </nav>
     </header>
 
-    <!-- Demais seções mantidas com ajustes de classes -->
+    <!-- Seção de Introdução -->
     <section id="sobre" class="hero">
-        <div class="hero-content">
-            <h1>Transforme sua experiência esportiva!</h1>
-            <p>O Joga Junto nasceu para transformar a forma como eventos esportivos são organizados!</p>
+        <h1>Transforme sua experiência esportiva!</h1>
+        <p>O Joga Junto nasceu para transformar a forma como eventos esportivos são organizados!</p>
+    </section>
+
+    <!-- Seção de Funcionalidades -->
+    <section id="funcionalidades">
+        <h2>Principais Funcionalidades</h2>
+        <div class="carousel">
+            <div class="slide">
+                <img src="img1.jpg" alt="Imagem 1">
+                <p>Criação e gerenciamento de partidas</p>
+            </div>
+            <div class="slide">
+                <img src="img2.jpg" alt="Imagem 2">
+                <p>Reserva de quadras e espaços esportivos</p>
+            </div>
+            <div class="slide">
+                <img src="img3.jpg" alt="Imagem 3">
+                <p>Montagem de grupos esportivos</p>
+            </div>
         </div>
     </section>
 
-    <!-- Seções mantidas com estrutura similar -->
+    <!-- Seção de Vídeo -->
+    <section id="video">
+        <h2>Assista ao nosso Pitch</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Seção de Equipe -->
+    <section id="equipe">
+        <h2>Nossa Equipe</h2>
+        <div class="team">
+            <div class="member">
+                <img src="dev1.jpg" alt="Dev 1">
+                <p>Nome do Desenvolvedor</p>
+            </div>
+            <div class="member">
+                <img src="prof1.jpg" alt="Professor">
+                <p>Consultoria Técnica</p>
+            </div>
+            <div class="member">
+                <img src="po1.jpg" alt="Especialista">
+                <p>Especialista do Domínio</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <footer id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Email: contato@dcomp.ufs.br</p>
+        <img src="ufs-logo.png" alt="Logo UFS" class="logo-ufs">
+    </footer>
+
 </body>
 </html>
