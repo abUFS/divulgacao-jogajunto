@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #001740;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fa6642;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fa6d4a;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.slide {
+    min-width: 300px;
+    margin: 10px;
+    background-color: #fdaf2a;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #43bff2;
+    padding: 10px;
+}
