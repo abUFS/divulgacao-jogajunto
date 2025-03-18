@@ -1,87 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joga Junto</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <!-- Barra de Navegação -->
     <header>
-        <div class="logo">Joga Junto</div>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#funcionalidades">Funcionalidades</a></li>
-                <li><a href="#video">Vídeo</a></li>
-                <li><a href="#equipe">Equipe</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <a href="#" class="logo">
+            <img src="logo-jogajunto.png" alt="Logo Joga Junto" />
+        </a>
+        <ul class="links">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#about">Objetivo</a></li>
+            <li><a href="#features">Funcionalidades</a></li>
+            <li><a href="#pitch">Vídeo</a></li>
+            <li><a href="#team">Equipe</a></li>
+            <button onclick="toggleModal()">Contato</button>
+        </ul>
     </header>
 
-    <!-- Seção de Introdução -->
-    <section id="sobre" class="hero">
-        <h1>Transforme sua experiência esportiva!</h1>
-        <p>O Joga Junto nasceu para transformar a forma como eventos esportivos são organizados!</p>
+    <!-- Seção Hero -->
+    <section id="hero" class="hero">
+        <div class="info">
+            <h1>Transforme sua experiência esportiva!</h1>
+            <p>O Joga Junto nasceu para transformar a forma como eventos esportivos são organizados!</p>
+            <button onclick="toggleModal()">Entre em contato</button>
+        </div>
+        <img src="hero-image.svg" alt="Ilustração de esportes" />
     </section>
 
-    <!-- Seção de Funcionalidades -->
-    <section id="funcionalidades">
+    <!-- Seção Objetivo -->
+    <section id="about" class="about">
+        <img src="goal-image.svg" alt="Ilustração de objetivo" />
+        <div class="info">
+            <h1>Nosso Objetivo</h1>
+            <p>
+                Com uma plataforma moderna e intuitiva, conectamos jogadores, organizadores e provedores de espaços esportivos, oferecendo uma experiência simples, ágil e integrada.
+            </p>
+        </div>
+    </section>
+
+    <!-- Seção Funcionalidades -->
+    <section id="features" class="features">
         <h2>Principais Funcionalidades</h2>
         <div class="carousel">
-            <div class="slide">
-                <img src="img1.jpg" alt="Imagem 1">
-                <p>Criação e gerenciamento de partidas</p>
-            </div>
-            <div class="slide">
-                <img src="img2.jpg" alt="Imagem 2">
-                <p>Reserva de quadras e espaços esportivos</p>
-            </div>
-            <div class="slide">
-                <img src="img3.jpg" alt="Imagem 3">
-                <p>Montagem de grupos esportivos</p>
+            <div class="carousel-inner">
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked" />
+                <div class="carousel-item">
+                    <img src="feature1.jpg" alt="Criação e gerenciamento de partidas" />
+                    <p>Criação e gerenciamento de partidas</p>
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="" />
+                <div class="carousel-item">
+                    <img src="feature2.jpg" alt="Reserva de quadras e espaços esportivos" />
+                    <p>Reserva de quadras e espaços esportivos</p>
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="" />
+                <div class="carousel-item">
+                    <img src="feature3.jpg" alt="Montagem de grupos esportivos" />
+                    <p>Montagem de grupos esportivos</p>
+                </div>
+                <!-- Controles do Carrossel -->
+                <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                <label for="carousel-2" class="carousel-control next control-1">›</label>
+                <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                <label for="carousel-3" class="carousel-control next control-2">›</label>
+                <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                <label for="carousel-1" class="carousel-control next control-3">›</label>
+                <!-- Indicadores do Carrossel -->
+                <ol class="carousel-indicators">
+                    <li><label for="carousel-1" class="carousel-bullet">•</label></li>
+                    <li><label for="carousel-2" class="carousel-bullet">•</label></li>
+                    <li><label for="carousel-3" class="carousel-bullet">•</label></li>
+                </ol>
             </div>
         </div>
     </section>
 
-    <!-- Seção de Vídeo -->
-    <section id="video">
-        <h2>Assista ao nosso Pitch</h2>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO" frameborder="0" allowfullscreen></iframe>
-        </div>
+    <!-- Seção Vídeo de Pitch -->
+    <section id="pitch" class="pitch">
+        <h2>Conheça Nosso Produto</h2>
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/SEU_VIDEO" frameborder="0" allowfullscreen></iframe>
     </section>
 
-    <!-- Seção de Equipe -->
-    <section id="equipe">
+    <!-- Seção Equipe -->
+    <section id="team" class="team">
         <h2>Nossa Equipe</h2>
-        <div class="team">
+        <div class="team-grid">
             <div class="member">
-                <img src="dev1.jpg" alt="Dev 1">
+                <img src="dev1.jpg" alt="Desenvolvedor 1" />
                 <p>Nome do Desenvolvedor</p>
             </div>
             <div class="member">
-                <img src="prof1.jpg" alt="Professor">
+                <img src="prof1.jpg" alt="Professor" />
                 <p>Consultoria Técnica</p>
             </div>
             <div class="member">
-                <img src="po1.jpg" alt="Especialista">
+                <img src="po1.jpg" alt="Especialista" />
                 <p>Especialista do Domínio</p>
             </div>
         </div>
     </section>
 
-    <!-- Seção de Contato -->
-    <footer id="contato">
+    <!-- Seção Contato -->
+    <footer id="contact">
         <h2>Entre em Contato</h2>
         <p>Email: contato@dcomp.ufs.br</p>
-        <img src="ufs-logo.png" alt="Logo UFS" class="logo-ufs">
+        <div class="logos">
+            <img src="logo-ufs.png" alt="Logo UFS" class="logo-ufs" />
+            <img src="logo-dcomp.png" alt="Logo DCOMP" class="logo-dcomp" />
+        </div>
     </footer>
 
+    <!-- Modal de Contato -->
+    <div id="contact-overlay" class="contact-overlay hide">
+        <div class="contact-modal">
+            <div class="header">
+                <img src="logo-jogajunto.png" alt="Logo Joga Junto" />
+                <button onclick="toggleModal()">✕</button>
+            </div>
+            <h2>Fale conosco</h2>
+            <form onsubmit="handleSubmit(event)" autocomplete="off">
+                <div>
+                    <label for="name">Nome completo*</label>
+                    <input name="name" type="text" placeholder="Ex: João Silva" required />
+                </div>
+                <div>
+                    <label for="email">E-mail*</label>
+                    <input name="email" type="email" placeholder="Ex: contato@email.com" required />
+                </div>
+                <div>
+                    <label for="message">Mensagem*</label>
+                    <textarea name="message" rows="6" placeholder="Digite sua mensagem" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
